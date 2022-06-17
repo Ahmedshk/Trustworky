@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustWorky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navigation with avatar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" width="250px" height="50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Trades</a>
+                    </li>
+                </ul>
+                <div class="dropdown avatar">
+                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/card-1.png" alt="mdo" width="40" height="40" class="rounded-circle">
+                        <span class="user_name">Jimmy Punter</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownUser1">
+                        <li><a href="Profile.html" target="_blank"> My Account </a></li>
+                        <li><a href="./index.html" target="_blank"> Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Profile Section -->
+
+    <section>
+        <div class="container">
+            <div class="Bg-color">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <p>Name</p>
+                            <input type="text" placeholder="Enter Title" value="Jimmy Punter" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="title">
+                            <div class="green_verified">
+                                <p>Email</p>
+                                <span>Verified</span>
+                            </div>
+                            <input type="email" placeholder="Enter Title" value="Jimmythepunter@yahoo.com" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="title">
+                            <div class="orange_verified">
+                                <p>Mobile</p>
+                                <span>Click to Verify</span>
+                            </div>
+                            <input type="tel" value="059 435 8765" />
+                        </div>
+                    </div>
+
+                    <div class="need_verified">
+                        <span>
+                            We need a varified mobile number so that Tradespeople can contact you
+                        </span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="title">
+                            <p>Location</p>
+                            <input type="text" value="Al Zahiya,Abu Dhabi" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="request_quote">
+                            <button class="btn1">Save Changes</button>
+                            <button class="btn2">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer_main" id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 footer_about">
+                    <img src="./images/logo.png" alt="footer-icon" />
+
+                    <div class="footer_about_texting">
+                        <p>The UAES PREMIER DIRECTORY OF VERFIED AND TRUSTWORTHY TRADESPEOPLE.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-2 quick_links">
+                    <h5>General</h5>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 Subscribe_section">
+                    <h5>Contact Us</h5>
+
+                    <div class="footer_social1">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/fb-icon.jpg" /></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter-icon.jpg" /></a>
+                        <a href="https:/www.instagram.com" target="_blank"><img src="./images/insta-icon.jpg" /></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cookies_section">
+            <div class="container">
+                <hr class="line" />
+                <div class="row align-items-center">
+                    <div class="col-md-6 p-0">
+                        <p>© 2022 Trustworky | All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

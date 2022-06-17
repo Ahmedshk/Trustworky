@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustWorky</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation with avatar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" width="250px" height="50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Trades</a>
+                    </li>
+                </ul>
+                <div class="dropdown avatar">
+                    <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/card-1.png" alt="mdo" width="40" height="40" class="rounded-circle">
+                        <span class="user_name">Jimmy Punter</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownUser1">
+                        <li><a href="Profile.html" target="_blank"> My Account </a></li>
+                        <li><a href="./index.html" target="_blank">Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Details Section -->
+
+    <section>
+        <div class="container">
+            <div class="Bg-color">
+                <div class="job_details_head">
+                    <h3 class="text-center">Enter job details below to request quotes from our top rated <span>
+                            Furniture
+                            Movers </span> in your area <span> Abu Dhabi City </span>
+                    </h3>
+                </div>
+                <!-- <form> -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <p>Enter a title for your job</p>
+                                <input type="text" placeholder="Enter a title" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>Describe the work you need done</p>
+                            <textarea
+                                placeholder="Moving from a 4 bedroom apartment to 3 bedroom apartment.Need to move furniture to new apartment and take some items to storage unit"
+                                rows="4" cols="50"></textarea>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>What trade do you need?</p>
+                            <select class="form-select select" aria-label="Default select example">
+                                <option selected>Painting/Decorating</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>Would you like to add a photo?</p>
+                            <div class="images_container">
+                                <div class="mx-2">
+                                    <img src="./images/card-1.png" class="rounded" width="100" height="100" />
+                                </div>
+
+                                <div>
+                                    <img src="./images/card-2.png" class="rounded" width="100" height="100" />
+                                </div>
+
+                                <div class="mx-2">
+                                    <img src="./images/card-3.png" class="rounded" width="100" height="100" />
+                                </div>
+
+                                <div class="upload_img">
+                                    <label for="file-input">
+                                        <img src="./images/upload.png" width="50" height="50" />
+                                    </label>
+                                    <input id="file-input" type="file" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p>What's your budget?</p>
+                            <select class="form-select select" aria-label="Default select example">
+                                <option selected>100 to 200 AED</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>When would you like the Work to start?</p>
+                            <div>
+                                <input type="radio" value="value1" name="jobDetails" />
+                                <label>As soon as possible</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="value2" name="jobDetails" />
+                                <label>Within 2 weeks</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="value3" name="jobDetails" />
+                                <label>Within 1 month</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="value4" name="jobDetails" />
+                                <label>I'm flexible</label>
+                            </div>
+
+                            <div>
+                                <p>By posting this job you are accepting TrustWorky <br /> <span>User Agreement</span>
+                                    and<span>Privacy Policy</span>
+                                </p>
+                            </div>
+
+                            <div class="job_post_btn_container2">
+                                <a href="#"> <button>Post a Job</button> </a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer_main" id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 footer_about">
+                    <img src="./images/logo.png" alt="footer-icon" />
+
+                    <div class="footer_about_texting">
+                        <p>The UAES PREMIER DIRECTORY OF VERFIED AND TRUSTWORTHY TRADESPEOPLE.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-2 quick_links">
+                    <h5>General</h5>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 Subscribe_section">
+                    <h5>Contact Us</h5>
+
+                    <div class="footer_social1">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/fb-icon.jpg" /></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter-icon.jpg" /></a>
+                        <a href="https:/www.instagram.com" target="_blank"><img src="./images/insta-icon.jpg" /></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cookies_section">
+            <div class="container">
+                <hr class="line" />
+                <div class="row align-items-center">
+                    <div class="col-md-6 p-0">
+                        <p>© 2022 Trustworky | All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</html>

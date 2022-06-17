@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en" oncontextmenu="return false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustWorky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" width="250px" height="50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#"> -->
+                        <button>Trade Sign-up</button>
+                        <!-- </a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Section 1 Form -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <!-- <form> -->
+                            <h2 class="accordion-header" id="headingOne">
+                                <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="decribe_job">
+                                        <p>Decsribe your job</p>
+                                        <textarea placeholder="Describe yourself here..." rows="4" cols="50">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="col-md-12">
+                                        <div class="title">
+                                            <p>Enter a title for your job</p>
+                                            <input type="text" placeholder="Enter a title" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p>Describe your job</p>
+                                        <textarea placeholder="Describe the job you need done" rows="4"
+                                            cols="50"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p>What trade do you need?</p>
+                                        <select class="form-select select" aria-label="Default select example">
+                                            <option selected>Painting/Decorating</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p>Would you like to add a photo?</p>
+                                        <div class="images_container">
+                                            <div class="mx-2">
+                                                <img src="./images/card-1.png" class="rounded" width="100"
+                                                    height="100" />
+                                            </div>
+
+                                            <div>
+                                                <img src="./images/card-2.png" class="rounded" width="100"
+                                                    height="100" />
+                                            </div>
+
+                                            <div class="mx-2">
+                                                <img src="./images/card-3.png" class="rounded" width="100"
+                                                    height="100" />
+                                            </div>
+                                            <div class="upload_img">
+                                                <label for="file-input">
+                                                    <img src="./images/upload.png" width="50" height="50" />
+                                                </label>
+                                                <input id="file-input" type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p>What's your budget?</p>
+                                        <select class="form-select select" aria-label="Default select example">
+                                            <option selected>100 to 200 AED</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p>When would you like the job to start?</p>
+                                        <div>
+                                            <input type="radio" value="value1" name="jobBtn" />
+                                            <label>As soon as possible</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" value="value2" name="jobBtn" />
+                                            <label>Within 2 weeks</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" value="value3" name="jobBtn" />
+                                            <label>Within 1 month</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" value="value4" name="jobBtn" />
+                                            <label>I'm flexible on the start date</label>
+                                        </div>
+                                        <div class="job_post_btn_container">
+                                            <a href="./PostJob.html" type="button" target="_blank">
+                                                <button>Post a Job</button> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 cards -->
+
+    <section class="cards_section">
+        <div class="container">
+            <div class="head">
+                <h3>Post a job and we will match it with suitable members, or request a quote directly from a member
+                    below
+                </h3>
+            </div>
+            <div class="card_main">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-2 post_card">
+                        <div class="image_card">
+                            <img src="./images/card-image1.jpg" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card_text">
+                            <b>Get Moving</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio accusamus,
+                                voluptatibus enim earum cum voluptatem, voluptatum, culpa a beatae reprehenderit
+                                saepe repudiandae autem voluptate amet. Corporis explicabo nisi a.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 round">
+                        <div class="rounded_circle">
+                            <span>8.2</span>
+                        </div>
+                        <p class="text-center member">Pro Member</p>
+                    </div>
+
+                    <div class="col-md-2 request_btns">
+                        <div class="request_quote">
+                            <button class="btn1">Request Quote</button>
+                            <button class="mt-3 btn2">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards_section">
+        <div class="container">
+            <div class="card_main">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-2 post_card">
+                        <div class="image_card">
+                            <img src="./images/card-image2.jpg" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card_text">
+                            <b>Shift House Movers</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio accusamus,
+                                voluptatibus enim earum cum voluptatem, voluptatum, culpa a beatae reprehenderit
+                                saepe repudiandae autem voluptate amet. Corporis explicabo nisi a.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-1 round">
+                        <div class="rounded_circle">
+                            <span>8.1</span>
+                        </div>
+                        <p class="text-center member">Pro Member</p>
+                    </div>
+
+                    <div class="col-md-2 request_btns ">
+                        <div class="request_quote">
+                            <button class="btn1">Request Quote</button>
+                            <button class="mt-3 btn2">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards_section">
+        <div class="container">
+            <div class="card_main">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-2 post_card">
+                        <div class="image_card">
+                            <img src="./images/card-image3.jpg" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card_text">
+                            <b>Abu Dhabi Top Move</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio accusamus,
+                                voluptatibus enim earum cum voluptatem, voluptatum, culpa a beatae reprehenderit
+                                saepe repudiandae autem voluptate amet. Corporis explicabo nisi a.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-1 round">
+                        <div class="rounded_circle">
+                            <span>8.1</span>
+                        </div>
+                        <p class="text-center member">Pro Member</p>
+                    </div>
+
+                    <div class="col-md-2 request_btns">
+                        <div class="request_quote">
+                            <button class="btn1">Request Quote</button>
+                            <button class="mt-3 btn2">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards_section">
+        <div class="container">
+            <div class="card_main">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-2 post_card">
+                        <div class="image_card">
+                            <img src="./images/card-image4.jpg" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="card_text">
+                            <b>E-Movers</b>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio accusamus,
+                                voluptatibus enim earum cum voluptatem, voluptatum, culpa a beatae reprehenderit
+                                saepe repudiandae autem voluptate amet. Corporis explicabo nisi a.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-1 round">
+                        <div class="rounded_circle">
+                            <span>7.7</span>
+                        </div>
+                        <p class="text-center member">Pro Member</p>
+                    </div>
+
+                    <div class="col-md-2 request_btns">
+                        <div class="request_quote">
+                            <button class="btn1">Request Quote</button>
+                            <button class="mt-3 btn2">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer_main" id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 footer_about">
+                    <img src="./images/logo.png" alt="footer-icon" />
+
+                    <div class="footer_about_texting">
+                        <p>The UAES PREMIER DIRECTORY OF VERFIED AND TRUSTWORTHY TRADESPEOPLE.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-2 quick_links">
+                    <h5>General</h5>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 Subscribe_section">
+                    <h5>Contact Us</h5>
+
+                    <div class="footer_social1">
+                        <a href="https://www.facebook.com" target="_blank"><img src="./images/fb-icon.jpg" /></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter-icon.jpg" /></a>
+                        <a href="https:/www.instagram.com" target="_blank"><img src="./images/insta-icon.jpg" /></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cookies_section">
+            <div class="container">
+                <hr class="line" />
+                <div class="row align-items-center">
+                    <div class="col-md-6 p-0">
+                        <p>© 2022 Trustworky | All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
